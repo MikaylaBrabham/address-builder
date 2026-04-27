@@ -22,32 +22,32 @@ public class AddressBuilder {
      StringBuilder billing = new StringBuilder();
         // Gather User Billing address details
 
-        System.out.print("Enter Street: ");
+        System.out.print("Billing Street: ");
         billing.append(scanner.nextLine()).append(", ");
 
-        System.out.print("Enter City: ");
+        System.out.print("Billing City: ");
         billing.append(scanner.nextLine()).append(", ");
 
-        System.out.print("Enter State: ");
+        System.out.print("Billing State: ");
         billing.append(scanner.nextLine()).append(", ");
 
-        System.out.print("Enter Zipcode: ");
+        System.out.print("Billing Zipcode: ");
         billing.append(scanner.nextLine()).append(", ");
 
         // create a string builder for shipping details
         StringBuilder shipping = new StringBuilder();
         // Gather User shipping address details
 
-        System.out.print("Enter Street: ");
+        System.out.print("Shipping Street: ");
         shipping.append(scanner.nextLine()).append(", ");
 
-        System.out.print("Enter City: ");
+        System.out.print("Shipping City: ");
         shipping.append(scanner.nextLine()).append(", ");
 
-        System.out.print("Enter State: ");
+        System.out.print(" Shipping State: ");
         shipping.append(scanner.nextLine()).append(", ");
 
-        System.out.print("Enter Zipcode: ");
+        System.out.print(" Shipping Zipcode: ");
         shipping.append(scanner.nextLine()).append(", ");
 
 
@@ -55,7 +55,10 @@ public class AddressBuilder {
         // print name to screen
         System.out.println("Full Name: " + firstName + " " + lastName);
 
-       // System.out.println("What is your billing address?");
+       // display billing address
+       // System.out.println("Billing address:\n" + street);
+
+
         //String billing
 
     }
