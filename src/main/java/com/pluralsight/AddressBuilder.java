@@ -23,32 +23,38 @@ public class AddressBuilder {
         // Gather User Billing address details
 
         System.out.print("Billing Street: ");
-        billing.append(scanner.nextLine()).append(", ");
+        billing.append(scanner.nextLine()).append("\n ");
 
         System.out.print("Billing City: ");
-        billing.append(scanner.nextLine()).append(", ");
+        billing.append(scanner.nextLine()).append("\n ");
 
         System.out.print("Billing State: ");
-        billing.append(scanner.nextLine()).append(", ");
+        billing.append(scanner.nextLine()).append("\n ");
 
         System.out.print("Billing Zipcode: ");
-        billing.append(scanner.nextLine()).append(", ");
+        billing.append(scanner.nextLine()).append("\n ");
+
+        //created a newline to eneter a space between the two addresses
+        System.out.printf("%n");
 
         // create a string builder for shipping details
         StringBuilder shipping = new StringBuilder();
         // Gather User shipping address details
 
         System.out.print("Shipping Street: ");
-        shipping.append(scanner.nextLine()).append(", ");
+        shipping.append(scanner.nextLine()).append("\n ");
 
         System.out.print("Shipping City: ");
-        shipping.append(scanner.nextLine()).append(", ");
+        shipping.append(scanner.nextLine()).append("\n ");
 
         System.out.print(" Shipping State: ");
-        shipping.append(scanner.nextLine()).append(", ");
+        shipping.append(scanner.nextLine()).append("\n ");
 
         System.out.print(" Shipping Zipcode: ");
-        shipping.append(scanner.nextLine()).append(", ");
+        shipping.append(scanner.nextLine()).append("\n ");
+
+        //created a newline to eneter a space between the two addresses
+        System.out.printf("%n");
 
 
 
@@ -56,10 +62,10 @@ public class AddressBuilder {
         System.out.println("Full Name: " + firstName + " " + lastName);
 
        // display billing address
-       // System.out.println("Billing address:\n" + street);
+        System.out.println("Billing Address:\n" + billing.toString());
 
-
-        //String billing
+       // display shipping address
+        System.out.println("Shipping Address:\n" + shipping.toString());
 
     }
 }
