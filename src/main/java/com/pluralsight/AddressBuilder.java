@@ -9,10 +9,13 @@ public class AddressBuilder {
         Scanner scanner = new Scanner(System.in);
 
         // Gather User First name
-        System.out.println("Enter your full name: ");
-        String fullName = scanner
+        System.out.println("Enter your first name: ");
+        String firstName = scanner.nextLine();
 
+        // Gather User last name
+        System.out.println("Enter your last name: ");
         // Gather User Last name
+        String lastName = scanner.nextLine();
 
 
         // create a string builder for billing details
@@ -33,6 +36,10 @@ public class AddressBuilder {
         shipping.append("State, ");
         shipping.append("Zip, ");
 
+
+
+        // print name to screen
+        System.out.println("Full Name: " + firstName + " " + lastName);
 
         System.out.println("What is your billing address?");
         String billing
